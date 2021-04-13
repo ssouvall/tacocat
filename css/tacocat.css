@@ -1,0 +1,108 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+html,
+body {
+  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+}
+
+h1,
+h3,
+h5 {
+  text-align: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  line-height: 30px; 
+  background-color: black;
+  text-align: center;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.hero-div {
+  text-align: center;
+}
+
+.hero {
+  width: 70%;
+  height: auto;
+  padding-top: 30px;
+}
+
+.intro {
+  padding-top: 50px;
+}
+
+.page-break {
+  width: 100%;
+  text-align: center;
+}
+
+/* Header */
+
+.navbar {
+  background-color: black;
+}
+
+.nav-social-buttons {
+  width: 10rem;
+}
+
+.footer-social-buttons {
+  width: 50rem;
+}
+
+.nav-social-buttons a {
+  margin-right: 1rem;
+}
+
+.nav-icons {
+  color: white;
+}
+
+/* End Header */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.headshot-div {
+  text-align: center;
+}
+
+.headshot {
+  width: 60%;
+  height: auto;
+  padding-top: 30px;
+  vertical-align: center;
+}
