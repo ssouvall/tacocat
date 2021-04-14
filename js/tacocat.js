@@ -1,5 +1,12 @@
 const tacoBtn = document.getElementById("tacoBtn");
-//add event listener to button
+
+function fadeOut() {
+    gsap.to("#app-form", { display: "none", opacity: 0, duration: 1 })
+};
+
+function fadeIn() {
+    gsap.to(".result", { display: "block", duration: 5, opacity: 1 })
+};
 
 tacoBtn.addEventListener('click', () => {
     const userInput = document.getElementById('tacoCat').value;
@@ -14,8 +21,13 @@ tacoBtn.addEventListener('click', () => {
     }
 
     if (finalInput == reverseWord) {
-        tacoResult.innerHTML = `${userInput} is ${reverseWord} backwards. That's a Pallindrome!`;
+        tacoResult.innerHTML = `${userInput} is ${reverseWord} backwards. That's a Palindrome!`;
     } else {
-        tacoResult.innerHTML = `${userInput} is ${reverseWord} backwards. That is not a Pallindrome.`
+        tacoResult.innerHTML = `${userInput} is ${reverseWord} backwards. That is not a Palindrome.`
     }
+    fadeOut();
+    fadeIn();
 });
+
+
+

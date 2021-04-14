@@ -11,7 +11,7 @@ body {
 
 html,
 body {
-  background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  background: #d8ebe4;
 }
 
 h1,
@@ -20,13 +20,19 @@ h5 {
   text-align: center;
 }
 
+.btn {
+  background: #007580;
+  border-color: #007580;
+  border-style: solid;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   line-height: 30px; 
-  background-color: black;
+  background-color: #282846;
   text-align: center;
 }
 
@@ -40,6 +46,18 @@ h5 {
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
+#navbar-brand {
+  color: #fed049;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+#tacocat-logo {
+  height: 50px;
+  margin-bottom: 15px;
+  width: auto;
+}
+
 .hero-div {
   text-align: center;
 }
@@ -48,6 +66,33 @@ h5 {
   width: 70%;
   height: auto;
   padding-top: 30px;
+}
+
+@media(min-width: 768px) {
+  #app-row {
+    margin-right: 25%;
+    margin-left: 25%;
+    width: 50%;
+  }
+}
+
+#app-form {
+  display: block;
+}
+
+.app-container {
+  padding-top: 100px;
+}
+
+.result {
+  display: none;
+  opacity: 0;
+}
+
+
+#app-hero {
+  height: 15%;
+  width: auto;
 }
 
 .intro {
@@ -62,7 +107,11 @@ h5 {
 /* Header */
 
 .navbar {
-  background-color: black;
+  background-color:#282846;
+}
+
+.nav-item {
+  margin-left: 2.5rem;
 }
 
 .nav-social-buttons {

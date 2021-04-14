@@ -27,7 +27,7 @@
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-custom">
-        <a class="navbar-brand" href="#">Project Name</a>
+        <a id="navbar-brand" class="navbar-brand" href="#"><span><img id="tacocat-logo" src="/img/tacocat.png" alt="tacocat"></span>TacoCat</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -86,15 +86,15 @@
       }
 
       if (finalInput == reverseWord) {
-          tacoResult.innerHTML = `${userInput} is ${reverseWord} backwards. That's a Pallindrome!`;
+          tacoResult.innerHTML = `${userInput} is ${reverseWord} backwards. That's a Palindrome!`;
       } else {
-          tacoResult.innerHTML = `${userInput} is ${reverseWord} backwards. That is not a Pallindrome.`
+          tacoResult.innerHTML = `${userInput} is ${reverseWord} backwards. That is not a Palindrome.`
       }
   });
   </code>
 </pre>
     </main>
-
+<br>
     <footer class="footer white">
       <div class="container">
           <div class="row footer-row">

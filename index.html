@@ -26,7 +26,7 @@
     <header>
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-custom">
-        <a class="navbar-brand" href="#">TacoCat</a>
+        <a id="navbar-brand" class="navbar-brand" href="#"><span><img id="tacocat-logo" src="/img/tacocat.png" alt="tacocat"></span>TacoCat</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -75,31 +75,12 @@
                         <h3>Check if a String is a Palindrome by Reversing it in JavaScript!</h3>
                         <br>
                         <p>TacoCat is a JavaScript coding challenge that allows the user to input a string, then reverses that string and outputs the result. It then checks if the user's string is a palindrome.</p><br>
-                        <p><Strong>What is a palindrome?:</Strong> A palindrome is a word, sentence, or phrase that is the same forward and backwards. For example, the phrase "A man, a plan, a canal, Panama" is a palindrome because it spells the same phrase when read backward (with all spaces, special characters, and capitalizations removed). Another example is TacoCat, hence the title of this challenge! </p>
+                        <p><Strong>What is a palindrome?:</Strong> A palindrome is a word, sentence, or phrase, such as "tacocat", that is read the same forward and backwards. </p>
                         <br>
+                        <div>
+                          <a href="app.html" class="form-control btn btn-dark btn-lg">Go to the App!</a>
                         </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <hr class="page-break">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="instructions">
-                        <h3>Instructions</h3>
-                        <br>
-                        <p>Completing this challenge requirs four basic steps.</p><br> 
-                        <p>First, all special characters and white spaces should be removed from the user's input. This is done in order to make the string comparison based strictly on alphanumeric characters. For example, "A man, a plan, a canal, Panama!" would falsly return as not being a palindrome if the spaces and exclamation point were not removed. This is accomplished by setting the user's input equal to string.replace(/[^a-z0-9]/gi,''). The regex code in the replace method checks the string and removes all characters that are not alphanumeric.</p> <br>
-                        <p>Second, the freshly scrubbed user input is set to lower case using the string.toLowerCase() method. Taking the input to lower case is important for the same reason as removing special characters and spaces: the computer would incorrectly miss a palindrome if one letter was capitalized. This should then be saved to a variable called finalInput.</p><br>
-                        <p>Third, finalInput is reversed. This is accomplished using a reverse for loop. We loop through the string backward and saved the result to a new variable, so that the new variable is equal to the inputted string backward.</p><br>
-                        <p>Finally, the finalInput variable is compared against the flipped version using an if/else statement. If they are equal, the input is a palindrome!</p>
-                    </div>
-                    <br>
-                    <div>
-                      <a href="app.html" class="btn btn-dark btn-lg">Go to the App!</a>
-                    </div>
+                      </div>
                 </div>
             </div>
         </div>
