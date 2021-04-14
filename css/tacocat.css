@@ -4,6 +4,7 @@ html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
@@ -31,7 +32,7 @@ h5 {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  line-height: 30px; 
+  line-height: 30px;
   background-color: #282846;
   text-align: center;
 }
@@ -107,7 +108,7 @@ h5 {
 /* Header */
 
 .navbar {
-  background-color:#282846;
+  background-color: #282846;
 }
 
 .nav-item {
@@ -116,6 +117,27 @@ h5 {
 
 .nav-social-buttons {
   width: 10rem;
+}
+
+nav li {
+  position: relative;
+}
+
+@media(min-width: 768px) {
+  .nav-animate::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #fed049;
+    width: 0%;
+    bottom: 2px;
+  }
+
+  .nav-animate:hover::before {
+    width: 85%;
+  }
+
 }
 
 .footer-social-buttons {
@@ -132,11 +154,11 @@ h5 {
 
 /* End Header */
 
-body > .container {
+body>.container {
   padding: 60px 15px 0;
 }
 
-.footer > .container {
+.footer>.container {
   padding-right: 15px;
   padding-left: 15px;
 }
